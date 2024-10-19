@@ -1,6 +1,7 @@
 const User = require('../models/userModel');
 const ErrorResponse = require('../utils/errorResponse');
 
+
 exports.signup = async (req,res,next)=>{
     const {email} = req.body;
     const userExist = await User.findOne({email});
@@ -59,6 +60,16 @@ exports.logout = async (req,res,next)=>{
     res.status(200).json({
         success:true,
         message:"logged out"
+
+    })
+}
+
+//user profile
+exports.userProfile = async (req,res,next)=>{
+    const user = await User.findById(req.user.id).select('-password');
+    res.status(200).json({
+        success:true,
+        user
 
     })
 }
