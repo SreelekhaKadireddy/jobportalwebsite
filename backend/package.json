@@ -4,7 +4,9 @@
   "description": "job portal",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "build":"echo 'Backend build complete!' ",
+    "serve":"node app.js"
   },
   "author": "sreelekha",
   "license": "ISC",
