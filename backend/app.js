@@ -28,7 +28,7 @@ app.use(bodyparser.urlencoded({
     extended:true
 }));
 app.use(cookieParser());
-app.use(cors({origin:"http://192.168.227.104:3000"}));
+app.use(cors());
 
 //routes middleware
 //app.get('/',(req,res)=>{

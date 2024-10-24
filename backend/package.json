@@ -2,11 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "job portal",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
-    "build":"echo 'Backend build complete!' ",
-    "serve":"node app.js"
+    "build":"echo 'Backend build complete!' "
   },
   "author": "sreelekha",
   "license": "ISC",
